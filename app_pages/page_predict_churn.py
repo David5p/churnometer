@@ -40,7 +40,9 @@ def page_predict_churn_body():
     st.write(churn_pipe_dc_fe)
 
     st.write("* The second is for feature scaling and modelling.")
-    st.write(churn_pipe_model)
+    st.write("Pipeline steps:", list(churn_pipe_model.named_steps.keys()))
+
+
 
     # show feature importance plot
     st.write("---")
